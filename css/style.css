@@ -1,0 +1,165 @@
+/* Core Variables */
+:root {
+    /* Light Mode Defaults */
+    --bg-color: #FCE4CC;
+    --text-color: #292322;
+    --heading-color: #222222;
+    --hero-text: #ffffff;
+    --primary-color: #4a6fa5;
+    --secondary-color: #f0f0f0;
+    --card-bg: #ffffff;
+    --blueboard-bg: #e3f2fd;
+    --blueboard-border: #2196F3;
+    --subject-accent: #d4b483;
+
+    /* Subject Colors - Light Mode */
+    --biology: #4CAF50;
+    --chemistry: #9C27B0;
+    --physics: #2196F3;
+    --geology: #795548;
+    --mechanics: #607D8B;
+    --math: #FF9800;
+    --computer-science: #3F51B5;
+    --arabic-religion: #009688;
+    --english: #E91E63;
+    --deutsch: #F44336;
+    --french: #3F51B5;
+    --social-studies: #CDDC39;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Overrides */
+    --bg-color: #292322;
+    --text-color: #FCE4CC;
+    --heading-color: #ffffff;
+    --hero-text: #f0f0f0;
+    --primary-color: #6a8fc5;
+    --secondary-color: #333333;
+    --card-bg: #333333;
+    --blueboard-bg: #1a3a6a;
+    --blueboard-border: #64b5f6;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+    margin: 0.5rem 0;
+}
+
+.arabic {
+    font-family: 'Traditional Arabic', Arial;
+    font-size: 1.2rem;
+    direction: rtl;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--subject-accent) 100%);
+    color: var(--hero-text);
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.hero h2, .hero p {
+    color: var(--hero-text);
+    margin: 0.5rem 0;
+}
+
+/* Subject Grid */
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.subject-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Colored Left Borders */
+.subject-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+}
+
+.biology::before { background-color: var(--biology); }
+.chemistry::before { background-color: var(--chemistry); }
+.physics::before { background-color: var(--physics); }
+.geology::before { background-color: var(--geology); }
+.mechanics::before { background-color: var(--mechanics); }
+.math::before { background-color: var(--math); }
+.computer-science::before { background-color: var(--computer-science); }
+.arabic-religion::before { background-color: var(--arabic-religion); }
+.english::before { background-color: var(--english); }
+.deutsch::before { background-color: var(--deutsch); }
+.french::before { background-color: var(--french); }
+.social-studies::before { background-color: var(--social-studies); }
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.subject-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Blueboard */
+.blueboard {
+    background: var(--blueboard-bg);
+    border-left: 5px solid var(--blueboard-border);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    opacity: 0.9;
+}
