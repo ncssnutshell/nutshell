@@ -1,0 +1,26 @@
+:root {
+    --subject-color: #FF9800;
+    --subject-light: #fff3e0;
+    --subject-dark: #ef6c00;
+    --subject-accent: #ffb74d;
+}
+
+header {
+    background: linear-gradient(135deg, var(--subject-color), var(--subject-dark));
+}
+
+.resource-card {
+    background: repeating-linear-gradient(45deg, var(--subject-light), var(--subject-light) 10px, var(--card-bg) 10px, var(--card-bg) 20px);
+    border-left: 5px solid var(--subject-color);
+}
+
+.download-btn {
+    background-color: var(--subject-dark);
+    color: white;
+}
+
+[data-theme="dark"] {
+    .resource-card {
+        background: repeating-linear-gradient(45deg, #332900, #332900 10px, var(--card-bg) 10px, var(--card-bg) 20px);
+    }
+}

@@ -1,1 +1,40 @@
+:root {
+    --subject-color: #009688;
+    --subject-light: #e0f2f1;
+    --subject-dark: #00796b;
+    --subject-accent: #4db6ac;
+}
 
+header {
+    background: linear-gradient(135deg, var(--subject-color), var(--subject-dark));
+}
+
+.resource-card {
+    border-right: 5px solid var(--subject-dark);
+    background: linear-gradient(to left, var(--card-bg) 95%, var(--subject-accent) 5%);
+}
+
+.download-btn {
+    background-color: var(--subject-color);
+    color: white;
+}
+
+[data-theme="dark"] {
+    .resource-card {
+        background: linear-gradient(to left, var(--card-bg) 95%, rgba(77, 182, 172, 0.3) 5%);
+    }
+    .download-btn {
+        background-color: var(--subject-dark);
+    }
+}
+
+/* RTL specific styles */
+[dir="rtl"] .resource-card {
+    border-right: none;
+    border-left: 5px solid var(--subject-dark);
+    background: linear-gradient(to right, var(--card-bg) 95%, var(--subject-accent) 5%);
+}
+
+[dir="rtl"][data-theme="dark"] .resource-card {
+    background: linear-gradient(to right, var(--card-bg) 95%, rgba(77, 182, 172, 0.3) 5%);
+}

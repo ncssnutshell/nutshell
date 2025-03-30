@@ -1,0 +1,26 @@
+:root {
+    --subject-color: #9C27B0;
+    --subject-light: #f3e5f5;
+    --subject-dark: #7b1fa2;
+    --subject-accent: #ba68c8;
+}
+
+header {
+    background: linear-gradient(135deg, var(--subject-color), var(--subject-dark));
+}
+
+.resource-card {
+    border-left: 5px solid var(--subject-color);
+    background: linear-gradient(45deg, transparent 65%, rgba(156, 39, 176, 0.1) 65%), var(--card-bg);
+}
+
+.download-btn {
+    background: linear-gradient(to right, var(--subject-color), var(--subject-dark));
+    color: white;
+}
+
+[data-theme="dark"] {
+    .resource-card {
+        background: linear-gradient(45deg, transparent 65%, rgba(156, 39, 176, 0.2) 65%), var(--card-bg);
+    }
+}

@@ -1,0 +1,29 @@
+:root {
+    --subject-color: #3F51B5;
+    --subject-light: #e8eaf6;
+    --subject-dark: #303f9f;
+    --subject-accent: #7986cb;
+}
+
+header {
+    background: linear-gradient(135deg, var(--subject-color), var(--subject-dark));
+}
+
+.resource-card {
+    border-left: 5px solid var(--subject-color);
+    background: linear-gradient(to right, var(--card-bg) 95%, var(--subject-accent) 5%);
+}
+
+.download-btn {
+    background-color: var(--subject-color);
+    color: white;
+}
+
+[data-theme="dark"] {
+    .resource-card {
+        background: linear-gradient(to right, var(--card-bg) 95%, rgba(121, 134, 203, 0.3) 5%);
+    }
+    .download-btn {
+        background-color: var(--subject-dark);
+    }
+}
