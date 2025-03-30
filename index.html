@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutshell - Cairo STEM School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Main Layout */
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Header */
+        header {
+            margin-bottom: 2rem;
+        }
+        
+        .arabic {
+            font-family: 'Traditional Arabic', Arial;
+            font-size: 1.2rem;
+            direction: rtl;
+            margin: 1rem 0;
+            color: var(--text-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--subject-accent));
+            color: var(--hero-text);
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .hero h2, .hero p {
+            color: var(--hero-text);
+            margin: 0.5rem 0;
+        }
+        
+        /* Subjects Grid */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .subject-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-color);
+            border-left: 5px solid;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        .subject-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Subject Colors */
+        .biology { --subject-color: #4CAF50; border-left-color: #4CAF50; }
+        .chemistry { --subject-color: #9C27B0; border-left-color: #9C27B0; }
+        .physics { --subject-color: #2196F3; border-left-color: #2196F3; }
+        .geology { --subject-color: #795548; border-left-color: #795548; }
+        .mechanics { --subject-color: #607D8B; border-left-color: #607D8B; }
+        .math { --subject-color: #FF9800; border-left-color: #FF9800; }
+        .computer-science { --subject-color: #3F51B5; border-left-color: #3F51B5; }
+        .arabic-religion { --subject-color: #009688; border-left-color: #009688; }
+        .english { --subject-color: #E91E63; border-left-color: #E91E63; }
+        .deutsch { --subject-color: #F44336; border-left-color: #F44336; }
+        .french { --subject-color: #3F51B5; border-left-color: #3F51B5; }
+        .social-studies { --subject-color: #CDDC39; border-left-color: #CDDC39; }
+        
+        /* Blueboard */
+        .blueboard {
+            background: var(--blueboard-bg);
+            border-left: 5px solid var(--blueboard-border);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            text-align: center;
+        }
+        
+        /* Dark Mode Toggle */
+        #darkModeToggle {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <header>
+        <div class="arabic">رَبِّ اشرَحۡ لِي صدرِي ويسر لي أَمرِي</div>
+        <img src="logo.png" alt="Nutshell Logo" class="logo">
+        <h1>Nutshell</h1>
+        <div class="blueboard">
+            <p>New Cairo STEM School</p>
+        </div>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Your Ultimate Revision Hub</h2>
+            <p>Access study materials for all subjects in one place</p>
+        </section>
+
+        <section>
+            <h2>Subject Clubs</h2>
+            <div class="subject-grid">
+                <!-- Science Subjects -->
+                <a href="clubs/biology.html" class="subject-card biology">
+                    <div class="subject-icon">🧬</div>
+                    <h3>Biology</h3>
+                    <p>Life Sciences Resources</p>
+                </a>
+                
+                <a href="clubs/chemistry.html" class="subject-card chemistry">
+                    <div class="subject-icon">🧪</div>
+                    <h3>Chemistry</h3>
+                    <p>Elements & Reactions</p>
+                </a>
+                
+                <a href="clubs/physics.html" class="subject-card physics">
+                    <div class="subject-icon">⚛️</div>
+                    <h3>Physics</h3>
+                    <p>Laws of the Universe</p>
+                </a>
+                
+                <a href="clubs/geology.html" class="subject-card geology">
+                    <div class="subject-icon">🌋</div>
+                    <h3>Geology</h3>
+                    <p>Earth Science Materials</p>
+                </a>
+                
+                <a href="clubs/mechanics.html" class="subject-card mechanics">
+                    <div class="subject-icon">⚙️</div>
+                    <h3>Mechanics</h3>
+                    <p>Engineering Principles</p>
+                </a>
+
+                <!-- Mathematics -->
+                <a href="clubs/math.html" class="subject-card math">
+                    <div class="subject-icon">🧮</div>
+                    <h3>Mathematics</h3>
+                    <p>Numbers & Formulas</p>
+                </a>
+                
+                <!-- Computer Science -->
+                <a href="clubs/computer-science.html" class="subject-card computer-science">
+                    <div class="subject-icon">💻</div>
+                    <h3>Computer Science</h3>
+                    <p>Programming & Algorithms</p>
+                </a>
+
+                <!-- Languages -->
+                <a href="clubs/arabic-religion.html" class="subject-card arabic-religion">
+                    <div class="subject-icon">📖</div>
+                    <h3>Arabic & Religion</h3>
+                    <p>Islamic Studies Resources</p>
+                </a>
+                
+                <a href="clubs/english.html" class="subject-card english">
+                    <div class="subject-icon">🇬🇧</div>
+                    <h3>English</h3>
+                    <p>Language & Literature</p>
+                </a>
+                
+                <a href="clubs/deutsch.html" class="subject-card deutsch">
+                    <div class="subject-icon">🇩🇪</div>
+                    <h3>Deutsch</h3>
+                    <p>German Language</p>
+                </a>
+                
+                <a href="clubs/french.html" class="subject-card french">
+                    <div class="subject-icon">🇫🇷</div>
+                    <h3>French</h3>
+                    <p>French Language</p>
+                </a>
+
+                <!-- Humanities -->
+                <a href="clubs/social-studies.html" class="subject-card social-studies">
+                    <div class="subject-icon">🌍</div>
+                    <h3>Social Studies</h3>
+                    <p>History & Geography</p>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Blueboard Announcements 
+                 <section class="blueboard">
+            <h3>Latest Updates</h3>
+            <p>• New Biology cell structure diagrams</p>
+            <p>• Updated Chemistry periodic tables</p>
+            <p>• Additional Mathematics practice problems</p>
+        </section>
+        -->
+
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
