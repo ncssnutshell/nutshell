@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biology - Nutshell</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/themes/biology.css">
-</head>
-<body data-theme="light">
-    <header>
-        <h1><a href="../index.html">Nutshell</a> / Biology</h1>
-        <button id="darkModeToggle">🌙 Dark Mode</button>
-    </header>
-    
-    <main>
-        <section class="resources">
-            <h2>Study Materials</h2>
-            <div class="resource-card">
-                <h3>Cell Structure</h3>
-                <p>Complete breakdown of cell organelles</p>
-                <a href="../resources/biology/cell-structure.pdf" download class="download-btn">Download</a>
-            </div>
-            <div class="resource-card">
-                <h3>DNA Replication</h3>
-                <p>Step-by-step visual guide</p>
-                <a href="../resources/biology/dna-replication.pdf" download class="download-btn">Download</a>
-            </div>
-        </section>
-    </main>
-    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/themes/biology.css" />
+  </head>
+  <body data-theme="light">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <div
+          class="logo"
+          style="
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 30px;
+            color: white;
+          "
+        >
+          Nutshell - NCSS
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Grade 10</a></li>
+          <li><a href="#">Grade 11</a></li>
+          <li><a href="#">Grade 12</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="get-started-btn">Whatsapp</a>
+      </div>
+    </nav>
+
+    <!-- 2 Semesters Switchers-->
+    <div class="tabs">
+      <button class="tab-button active" onclick="openSemester('sem1')">
+        First Semester
+      </button>
+      <button class="tab-button" onclick="openSemester('sem2')">
+        Second Semester
+      </button>
+    </div>
+    <!-- Semester 1 -->
+    <div id="sem1" class="semester-content" style="display: block">
+      <!-- First Semester Learning Outcomes -->
+      <div class="card">
+        <div class="card-image">
+          <img src="../assets/images/biology_background.png" alt="" />
+        </div>
+        <div class="card-title">Learning Outcome 9</div>
+        <div class="card-tag">Photosynthesis</div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet,bore et dolore magna aliqu velit.Abore et
+          dolore magna aliqua.Ut enim ad minim veniam,quis nostrud
+          exercitation...
+        </div>
+      </div>
+    </div>
+    <!-- Semester 2 -->
+
+    <div id="sem2" class="semester-content" style="display: none">
+      <!-- Second Semester Learning Outcomes -->
+      <h1>semester 2</h1>
+    </div>
     <script src="../js/club.js"></script>
-</body>
+  </body>
 </html>
