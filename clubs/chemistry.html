@@ -3,177 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NutShell Chemistry Hub</title>
-  <meta name="description" content="Your comprehensive chemistry resource hub for all chemistry topics" />
-  <meta name="author" content="NutShell Club" />
-  <meta property="og:title" content="NutShell Chemistry Hub" />
-  <meta property="og:description" content="Access chemistry summaries and test banks for all chemistry topics" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@nutshell_club" />
-  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <link rel="stylesheet" href="../css/chem.css" />
+  <title>NutShell Chemistry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e6f7f5, #ffffff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2a9d8f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav button {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    main {
+      padding: 1rem;
+    }
+    .hidden {
+      display: none;
+    }
+    .tab-content {
+      margin-top: 1rem;
+    }
+    .subject-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      text-align: center;
+    }
+    footer {
+      background: #1a6d64;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="brand">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
-              <path d="M10 2v7.31"></path>
-              <path d="M14 9.3V1.99"></path>
-              <path d="M8.5 2h7"></path>
-              <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
-              <path d="M5.58 16.5h12.85"></path>
-            </svg>
-            <h1 class="brand-title">NutShell Chemistry</h1>
-          </div>
-          <nav class="nav">
-            <button class="btn btn-outline" onclick="navigateTo('home')">Home</button>
-            <button class="btn btn-outline" onclick="navigateTo('subjects')">Topics</button>
-            <button class="btn btn-outline" onclick="navigateTo('resources')">Resources</button>
-            <button class="btn btn-outline" onclick="navigateTo('upload')">Upload</button>
-            <button class="btn btn-outline" onclick="navigateTo('learning-objectives')">Learning Objectives</button>
-          </nav>
-        </div>
+  <!-- Header -->
+  <header>
+    <h1>NutShell Chemistry</h1>
+    <nav>
+      <button onclick="navigateTo('home')">Home</button>
+      <button onclick="navigateTo('subjects')">Topics</button>
+      <button onclick="navigateTo('resources')">Resources</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div id="home-content" class="tab-content">
+      <h2>Welcome to NutShell Chemistry</h2>
+      <p>Your hub for chemistry resources and study materials.</p>
+      <button onclick="navigateTo('subjects')">Explore Topics</button>
+    </div>
+
+    <div id="subjects-content" class="tab-content hidden">
+      <h2>Chemistry Topics</h2>
+      <div>
+        <div class="subject-card" onclick="selectSubject('general')">General Chemistry</div>
+        <div class="subject-card" onclick="selectSubject('organic')">Organic Chemistry</div>
+        <div class="subject-card" onclick="selectSubject('inorganic')">Inorganic Chemistry</div>
       </div>
-    </header>
-    <!-- Main Content -->
-    <main>
-      <div class="container">
-        <div id="home-content" class="tab-content">
-          <section class="home-section">
-            <h2>Welcome to NutShell Chemistry</h2>
-            <p>
-              Your comprehensive hub for chemistry resources, study materials, and test banks.
-              Master every molecule, reaction, and concept with our curated content.
-            </p>
-            <div class="features">
-              <div class="feature-card">
-                <div class="feature-icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 3v16h16"></path>
-                    <path d="m5 19 6-6"></path>
-                    <path d="m2 6 3-3 3 3"></path>
-                    <path d="M18 16h.01"></path>
-                    <path d="M18 13h.01"></path>
-                    <path d="M18 10h.01"></path>
-                    <path d="M18 7h.01"></path>
-                  </svg>
-                </div>
-                <h3 class="feature-title">Expert Resources</h3>
-                <p class="feature-description">Access carefully curated study materials for all chemistry subjects.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <path d="m9 11 3 3L22 4"></path>
-                  </svg>
-                </div>
-                <h3 class="feature-title">Exam Preparation</h3>
-                <p class="feature-description">Comprehensive test banks designed to help you excel in your exams.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 8a6 6 0 0 0-6-6 6 6 0 0 0-6 6 6 6 0 0 0 6 6"></path>
-                    <path d="M6 21v-2a4 4 0 0 1 4-4h4"></path>
-                    <circle cx="18" cy="18" r="3"></circle>
-                    <path d="M18 14v1"></path>
-                    <path d="M18 21v1"></path>
-                    <path d="M22 18h-1"></path>
-                    <path d="M15 18h-1"></path>
-                    <path d="m20 16-1 1"></path>
-                    <path d="m17 19-1 1"></path>
-                    <path d="m20 20-1-1"></path>
-                    <path d="m17 16-1-1"></path>
-                  </svg>
-                </div>
-                <h3 class="feature-title">Student Contributions</h3>
-                <p class="feature-description">Share your chemistry knowledge and benefit from peer resources.</p>
-              </div>
-            </div>
-            <button class="btn btn-primary" style="margin-top: 2rem;" onclick="navigateTo('subjects')">
-              Explore Chemistry Topics
-            </button>
-          </section>
-        </div>
-        <div id="subjects-content" class="tab-content hidden">
-          <div class="page-title">
-            <h2>Chemistry Topics</h2>
-            <p>Select a topic to view all available chemistry resources.</p>
-          </div>
-          <div class="subjects-grid">
-            <div class="subject-card" onclick="selectSubject('general')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="8"></circle>
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <line x1="12" y1="2" x2="12" y2="4"></line>
-                  <line x1="12" y1="20" x2="12" y2="22"></line>
-                  <line x1="20" y1="12" x2="22" y2="12"></line>
-                  <line x1="2" y1="12" x2="4" y2="12"></line>
-                </svg>
-              </div>
-              <h3 class="subject-name">General Chemistry</h3>
-            </div>
-            <div class="subject-card" onclick="selectSubject('organic')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M10 2v7.31"></path>
-                  <path d="M14 9.3V1.99"></path>
-                  <path d="M8.5 2h7"></path>
-                  <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
-                  <path d="M5.58 16.5h12.85"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Organic Chemistry</h3>
-            </div>
-            <div class="subject-card" onclick="selectSubject('inorganic')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4.5 3h15"></path>
-                  <path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"></path>
-                  <path d="M6 14h12"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Inorganic Chemistry</h3>
-            </div>
-            <div class="subject-card" onclick="selectSubject('analytical')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M10 2v7.31"></path>
-                  <path d="M14 9.3V1.99"></path>
-                  <path d="M8.5 2h7"></path>
-                  <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
-                  <path d="M5.58 16.5h12.85"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Analytical Chemistry</h3>
-            </div>
-            <div class="subject-card" onclick="selectSubject('biochem')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22c4-4 10-12 0-20C2 10 8 18 12 22Z"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Biochemistry</h3>
-            </div>
-            <div class="subject-card" onclick="selectSubject('physical')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="m4.93 4.93 4.24 4.24"></path>
-                  <path d="m14.83 9.17 4.24-4.24"></path>
-                  <path d="m14.83 14.83 4.24 4.24"></path>
-                  <path d="m9.17 14.83-4.24 4.24"></path>
-                  <circle cx="12" cy="12" r="4"></circle>
-                </svg>
-              </div>
-              <h3 class="subject-name">Physical Chemistry</h3>
-            </div>
-            <div class="subject-card
+    </div>
+
+    <div id="resources-content" class="tab-content hidden">
+      <h2 id="resources-title">All Chemistry Resources</h2>
+      <input type="text" id="search-input" placeholder="Search resources..." oninput="filterResources()" />
+      <div id="resources-list"></div>
+      <div id="no-resources" class="hidden">
+        <p id="no-resources-message">No resources found.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="current-year"></span> NutShell Chemistry</p>
+  </footer>
+
+  <script>
+    // Application state
+    const subjects = {
+      general: "General Chemistry",
+      organic: "Organic Chemistry",
+      inorganic: "Inorganic Chemistry",
+    };
+    let resources = [];
+    let searchQuery = "";
+    let selectedSubject = null;
+
+    // Initialize app
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+      renderResources();
+    });
+
+    // Navigation function
+    function navigateTo(tabId) {
+      document.querySelectorAll(".tab-content").forEach((tab) => tab.classList.add("hidden"));
+      document.getElementById(`${tabId}-content`).classList.remove("hidden");
+    }
+
+    // Select subject
+    function selectSubject(subjectId) {
+      selectedSubject = subjectId;
+      document.getElementById("resources-title").textContent = `${subjects[subjectId]} Resources`;
+      navigateTo("resources");
+      renderResources();
+    }
+
+    // Filter resources
+    function filterResources() {
+      searchQuery = document.getElementById("search-input").value.toLowerCase();
+      renderResources();
+    }
+
+    // Render resources
+    function renderResources() {
+      const list = document.getElementById("resources-list");
+      const noResources = document.getElementById("no-resources");
+      const filtered = resources.filter(
+        (resource) =>
+          (!searchQuery || resource.title.toLowerCase().includes(searchQuery)) &&
+          (!selectedSubject || resource.subject === selectedSubject)
+      );
+
+      list.innerHTML = "";
+      if (filtered.length === 0) {
+        noResources.classList.remove("hidden");
+        document.getElementById("no-resources-message").textContent =
+          searchQuery && selectedSubject
+            ? `No resources found for "${searchQuery}" in ${subjects[selectedSubject]}`
+            : searchQuery
+            ? `No resources found for "${searchQuery}"`
+            : selectedSubject
+            ? `No resources available for ${subjects[selectedSubject]} yet`
+            : "No resources found.";
+      } else {
+        noResources.classList.add("hidden");
+        filtered.forEach((resource) => {
+          const div = document.createElement("div");
+          div.textContent = resource.title;
+          list.appendChild(div);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
