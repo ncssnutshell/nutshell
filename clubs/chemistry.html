@@ -4,7 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NutShell Chemistry Hub</title>
-    <link rel="stylesheet" href="../css/chem.css" />
+  <meta name="description" content="Your comprehensive chemistry resource hub for all chemistry topics" />
+  <meta name="author" content="NutShell Club" />
+  <meta property="og:title" content="NutShell Chemistry Hub" />
+  <meta property="og:description" content="Access chemistry summaries and test banks for all chemistry topics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nutshell_club" />
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <style>
+
+  </style>
 </head>
 <body>
   <div id="app">
@@ -32,7 +43,6 @@
         </div>
       </div>
     </header>
-
     <!-- Main Content -->
     <main>
       <div class="container">
@@ -43,7 +53,6 @@
               Your comprehensive hub for chemistry resources, study materials, and test banks.
               Master every molecule, reaction, and concept with our curated content.
             </p>
-            
             <div class="features">
               <div class="feature-card">
                 <div class="feature-icon-wrapper">
@@ -60,7 +69,6 @@
                 <h3 class="feature-title">Expert Resources</h3>
                 <p class="feature-description">Access carefully curated study materials for all chemistry subjects.</p>
               </div>
-              
               <div class="feature-card">
                 <div class="feature-icon-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -71,7 +79,6 @@
                 <h3 class="feature-title">Exam Preparation</h3>
                 <p class="feature-description">Comprehensive test banks designed to help you excel in your exams.</p>
               </div>
-              
               <div class="feature-card">
                 <div class="feature-icon-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -92,19 +99,16 @@
                 <p class="feature-description">Share your chemistry knowledge and benefit from peer resources.</p>
               </div>
             </div>
-            
             <button class="btn btn-primary" style="margin-top: 2rem;" onclick="navigateTo('subjects')">
               Explore Chemistry Topics
             </button>
           </section>
         </div>
-
         <div id="subjects-content" class="tab-content hidden">
           <div class="page-title">
             <h2>Chemistry Topics</h2>
             <p>Select a topic to view all available chemistry resources.</p>
           </div>
-          
           <div class="subjects-grid">
             <div class="subject-card" onclick="selectSubject('general')">
               <div class="subject-icon-wrapper">
@@ -119,7 +123,6 @@
               </div>
               <h3 class="subject-name">General Chemistry</h3>
             </div>
-            
             <div class="subject-card" onclick="selectSubject('organic')">
               <div class="subject-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -132,7 +135,6 @@
               </div>
               <h3 class="subject-name">Organic Chemistry</h3>
             </div>
-            
             <div class="subject-card" onclick="selectSubject('inorganic')">
               <div class="subject-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -143,7 +145,6 @@
               </div>
               <h3 class="subject-name">Inorganic Chemistry</h3>
             </div>
-            
             <div class="subject-card" onclick="selectSubject('analytical')">
               <div class="subject-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -156,7 +157,6 @@
               </div>
               <h3 class="subject-name">Analytical Chemistry</h3>
             </div>
-            
             <div class="subject-card" onclick="selectSubject('biochem')">
               <div class="subject-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -165,7 +165,6 @@
               </div>
               <h3 class="subject-name">Biochemistry</h3>
             </div>
-            
             <div class="subject-card" onclick="selectSubject('physical')">
               <div class="subject-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -179,713 +178,4 @@
               </div>
               <h3 class="subject-name">Physical Chemistry</h3>
             </div>
-            
-            <div class="subject-card" onclick="selectSubject('labsafety')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15.54 8.46A5 5 0 0 1 19 13a1 1 0 0 0 0 2H5a1 1 0 0 0 0-2 5 5 0 0 1 3.46-4.54"></path>
-                  <path d="M8.46 8.46a5 5 0 0 0 7.08 0"></path>
-                  <path d="M12 2v4"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Laboratory Safety</h3>
-            </div>
-            
-            <div class="subject-card" onclick="selectSubject('instruments')">
-              <div class="subject-icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-3-2-2 2-2-2-2 2-2-2-3 2Z"></path>
-                  <path d="M9 10h6"></path>
-                  <path d="M9 14h6"></path>
-                </svg>
-              </div>
-              <h3 class="subject-name">Instrumentation</h3>
-            </div>
-          </div>
-        </div>
-
-        <div id="resources-content" class="tab-content hidden">
-          <div class="resources-header">
-            <div>
-              <h2 id="resources-title" class="text-2xl font-bold text-teal-900 mb-2">All Chemistry Resources</h2>
-              <button id="clear-subject-btn" class="hidden btn btn-primary" style="display: none; padding: 0; background: none; color: #2a9d8f;" onclick="clearSubjectFilter()">
-                View all topics
-              </button>
-            </div>
-            
-            <div>
-              <input 
-                type="text" 
-                placeholder="Search resources..." 
-                id="search-input" 
-                class="search-input"
-                oninput="filterResources()"
-              />
-            </div>
-          </div>
-          
-          <div id="resources-list" class="resource-list">
-            <!-- Resources will be loaded here by JavaScript -->
-          </div>
-          
-          <div id="no-resources" class="no-resources hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="no-resources-icon">
-              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-            </svg>
-            <h3 class="no-resources-title">No resources found</h3>
-            <p class="no-resources-text" id="no-resources-message">
-              Try adjusting your search query
-            </p>
-            <button class="btn btn-primary" onclick="navigateTo('upload')">
-              Upload Resource
-            </button>
-          </div>
-        </div>
-
-        <div id="upload-content" class="tab-content hidden">
-          <div class="page-title">
-            <h2>Upload Chemistry Resources</h2>
-            <p>Share your notes, summaries, and test banks with the NutShell Chemistry community.</p>
-          </div>
-          
-          <div class="upload-card">
-            <form id="upload-form" onsubmit="handleUploadSubmit(event)" class="space-y-6">
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="title" class="form-label">Resource Title*</label>
-                  <input 
-                    type="text" 
-                    id="title"
-                    name="title"
-                    placeholder="e.g., Organic Chemistry Reaction Guide"
-                    class="form-input"
-                    required
-                  />
-                </div>
-                
-                <div class="form-group">
-                  <label for="subject" class="form-label">Topic*</label>
-                  <select 
-                    id="subject"
-                    name="subject"
-                    class="form-select"
-                    required
-                  >
-                    <option value="" disabled selected>Select a topic</option>
-                    <option value="general">General Chemistry</option>
-                    <option value="organic">Organic Chemistry</option>
-                    <option value="inorganic">Inorganic Chemistry</option>
-                    <option value="analytical">Analytical Chemistry</option>
-                    <option value="biochem">Biochemistry</option>
-                    <option value="physical">Physical Chemistry</option>
-                    <option value="labsafety">Laboratory Safety</option>
-                    <option value="instruments">Instrumentation</option>
-                    <option value="advanced">Advanced Topics</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label class="form-label">Resource Type*</label>
-                <div class="radio-group">
-                  <label class="radio-label">
-                    <input
-                      type="radio"
-                      name="type"
-                      value="summary"
-                      checked
-                    />
-                    <span>Summary</span>
-                  </label>
-                  
-                  <label class="radio-label">
-                    <input
-                      type="radio"
-                      name="type"
-                      value="test-bank"
-                    />
-                    <span>Test Bank</span>
-                  </label>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="description" class="form-label">
-                  Additional Description
-                </label>
-                <textarea 
-                  name="description"
-                  id="description"
-                  placeholder="Briefly describe your resource (optional)"
-                  class="form-textarea"
-                ></textarea>
-              </div>
-              
-              <div class="upload-area">
-                <input
-                  type="file"
-                  id="file"
-                  class="hidden"
-                  accept=".pdf,.doc,.docx,.ppt,.pptx"
-                />
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-icon">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="17 8 12 3 7 8"></polyline>
-                  <line x1="12" y1="3" x2="12" y2="15"></line>
-                </svg>
-                
-                <h3 id="file-name" class="upload-text">Upload your file</h3>
-                <p class="upload-hint">PDF, Word or PowerPoint files (max. 10MB)</p>
-                <button type="button" class="btn btn-outline" style="border-color: #e5e7eb; color: #4b5563;" onclick="document.getElementById('file').click()">
-                  Select File
-                </button>
-              </div>
-              
-              <div style="display: flex; justify-content: flex-end;">
-                <button type="submit" class="btn btn-primary">
-                  Upload Resource
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div id="learning-objectives-content" class="tab-content hidden">
-          <div class="page-title">
-            <h2>Chemistry Learning Objectives</h2>
-            <p>Explore the learning objectives for each grade level and semester. Click on a grade to view its semesters and objectives.</p>
-          </div>
-          
-          <div class="grades-container">
-            <!-- Grade 10 -->
-            <div class="grade">
-              <button class="grade-header" onclick="toggleGrade('grade10')">
-                <span>Grade 10</span>
-                <svg id="grade10-icon-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m6 9 6 6 6-6"/>
-                </svg>
-                <svg id="grade10-icon-up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                  <path d="m18 15-6-6-6 6"/>
-                </svg>
-              </button>
-              
-              <div id="grade10-content" class="hidden">
-                <!-- Semester 1 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade10-sem1')">
-                    <span>Semester 1</span>
-                    <svg id="grade10-sem1-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade10-sem1-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade10-sem1-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Detailed explanation of learning objective 1.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Detailed explanation of learning objective 2.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Detailed explanation of learning objective 3.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Detailed explanation of learning objective 4.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 5</h4>
-                      <p>Detailed explanation of learning objective 5.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Semester 2 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade10-sem2')">
-                    <span>Semester 2</span>
-                    <svg id="grade10-sem2-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade10-sem2-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade10-sem2-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Detailed explanation of learning objective 6.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Detailed explanation of learning objective 7.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Detailed explanation of learning objective 8.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Detailed explanation of learning objective 9.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 5</h4>
-                      <p>Detailed explanation of learning objective 10.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Grade 11 -->
-            <div class="grade">
-              <button class="grade-header" onclick="toggleGrade('grade11')">
-                <span>Grade 11</span>
-                <svg id="grade11-icon-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m6 9 6 6 6-6"/>
-                </svg>
-                <svg id="grade11-icon-up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                  <path d="m18 15-6-6-6 6"/>
-                </svg>
-              </button>
-              
-              <div id="grade11-content" class="hidden">
-                <!-- Semester 1 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade11-sem1')">
-                    <span>Semester 1</span>
-                    <svg id="grade11-sem1-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade11-sem1-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade11-sem1-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Understand quantum mechanical model of the atom and electron configurations.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Analyze reaction rates and factors affecting chemical kinetics.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Apply thermodynamic principles to chemical systems.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Understand chemical equilibrium and Le Chatelier's principle.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Semester 2 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade11-sem2')">
-                    <span>Semester 2</span>
-                    <svg id="grade11-sem2-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade11-sem2-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade11-sem2-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Understand redox reactions and electrochemical cells.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Analyze mechanisms of common organic reactions.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Interpret spectroscopic data for structure determination.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Master advanced laboratory procedures and safety protocols.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Grade 12 -->
-            <div class="grade">
-              <button class="grade-header" onclick="toggleGrade('grade12')">
-                <span>Grade 12</span>
-                <svg id="grade12-icon-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m6 9 6 6 6-6"/>
-                </svg>
-                <svg id="grade12-icon-up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                  <path d="m18 15-6-6-6 6"/>
-                </svg>
-              </button>
-              
-              <div id="grade12-content" class="hidden">
-                <!-- Semester 1 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade12-sem1')">
-                    <span>Semester 1</span>
-                    <svg id="grade12-sem1-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade12-sem1-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade12-sem1-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Explore complex organic reaction mechanisms and synthesis strategies.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Understand polymer structures, properties, and applications.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Study the chemical processes in living organisms.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Master advanced spectroscopic and chromatographic methods.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Semester 2 -->
-                <div class="semester">
-                  <button class="semester-header" onclick="toggleSemester('grade12-sem2')">
-                    <span>Semester 2</span>
-                    <svg id="grade12-sem2-icon-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                    <svg id="grade12-sem2-icon-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
-                      <path d="m18 15-6-6-6 6"/>
-                    </svg>
-                  </button>
-                  
-                  <div id="grade12-sem2-objectives" class="objectives hidden">
-                    <div class="objective">
-                      <h4>Objective 1</h4>
-                      <p>Analyze chemical processes in environmental systems.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 2</h4>
-                      <p>Explore radioactive decay, nuclear reactions, and applications.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 3</h4>
-                      <p>Study complex inorganic compounds and coordination chemistry.</p>
-                    </div>
-                    <div class="objective">
-                      <h4>Objective 4</h4>
-                      <p>Design and conduct independent scientific research projects.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
-              <path d="M10 2v7.31"></path>
-              <path d="M14 9.3V1.99"></path>
-              <path d="M8.5 2h7"></path>
-              <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
-              <path d="M5.58 16.5h12.85"></path>
-            </svg>
-            <span class="font-bold text-xl">NutShell Chemistry</span>
-          </div>
-          <div class="footer-info">
-            <p>&copy; <span id="current-year"></span> NutShell Club. All rights reserved.</p>
-            <p class="mt-1">Helping chemistry students succeed through knowledge sharing.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    // Initial resources data
-    const initialResources = [
-      { id: 1, title: 'Periodic Table Mastery', subject: 'general', type: 'summary', downloadUrl: '#' },
-      { id: 2, title: 'Organic Reactions Test Bank', subject: 'organic', type: 'test-bank', downloadUrl: '#' },
-      { id: 3, title: 'Acid-Base Equilibrium Notes', subject: 'analytical', type: 'summary', downloadUrl: '#' },
-      { id: 4, title: 'Biochemistry Midterm Prep', subject: 'biochem', type: 'test-bank', downloadUrl: '#' },
-      { id: 5, title: 'Thermodynamics Study Guide', subject: 'physical', type: 'summary', downloadUrl: '#' },
-    ];
-    
-    // Subjects mapping
-    const subjects = {
-      'general': 'General Chemistry',
-      'organic': 'Organic Chemistry',
-      'inorganic': 'Inorganic Chemistry',
-      'analytical': 'Analytical Chemistry',
-      'biochem': 'Biochemistry',
-      'physical': 'Physical Chemistry',
-      'labsafety': 'Laboratory Safety',
-      'instruments': 'Instrumentation',
-      'advanced': 'Advanced Topics'
-    };
-    
-    // Application state
-    let resources = [...initialResources];
-    let searchQuery = '';
-    let selectedSubject = null;
-    let activeTab = 'home';
-    let openGrade = '';
-    let openSemesters = { 'grade10-sem2': true };
-    
-    // Document Ready Function
-    document.addEventListener('DOMContentLoaded', function() {
-      console.log('NutShell Chemistry application loaded successfully');
-      
-      // Initialize the app
-      setCurrentYear();
-      renderResources();
-      
-      // Show the appropriate tab based on URL
-      const path = window.location.pathname;
-      if (path === '/learning-objectives') {
-        navigateTo('learning-objectives');
-      }
-      
-      // File input change handler
-      const fileInput = document.getElementById('file');
-      if (fileInput) {
-        fileInput.addEventListener('change', function() {
-          const fileName = this.files[0] ? this.files[0].name : 'Upload your file';
-          document.getElementById('file-name').textContent = fileName;
-        });
-      }
-    });
-    
-    // Set current year in footer
-    function setCurrentYear() {
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    }
-    
-    // Navigation function
-    function navigateTo(tabId) {
-      // Hide all tab contents
-      document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.classList.add('hidden');
-      });
-      
-      // Show selected tab content
-      document.getElementById(`${tabId}-content`).classList.remove('hidden');
-      
-      // Update active tab
-      activeTab = tabId;
-      
-      // Extra logic for specific tabs
-      if (tabId === 'resources') {
-        renderResources();
-      }
-    }
-    
-    // Toggle grade content
-    function toggleGrade(gradeId) {
-      const content = document.getElementById(`${gradeId}-content`);
-      const downIcon = document.getElementById(`${gradeId}-icon-down`);
-      const upIcon = document.getElementById(`${gradeId}-icon-up`);
-      const header = content.previousElementSibling;
-      
-      if (content.classList.contains('hidden')) {
-        // Close previously open grade
-        if (openGrade && openGrade !== gradeId) {
-          const prevContent = document.getElementById(`${openGrade}-content`);
-          const prevDownIcon = document.getElementById(`${openGrade}-icon-down`);
-          const prevUpIcon = document.getElementById(`${openGrade}-icon-up`);
-          const prevHeader = prevContent.previousElementSibling;
-          
-          prevContent.classList.add('hidden');
-          prevDownIcon.classList.remove('hidden');
-          prevUpIcon.classList.add('hidden');
-          prevHeader.classList.remove('active');
-        }
-        
-        // Open current grade
-        content.classList.remove('hidden');
-        downIcon.classList.add('hidden');
-        upIcon.classList.remove('hidden');
-        header.classList.add('active');
-        openGrade = gradeId;
-      } else {
-        // Close current grade
-        content.classList.add('hidden');
-        downIcon.classList.remove('hidden');
-        upIcon.classList.add('hidden');
-        header.classList.remove('active');
-        openGrade = '';
-      }
-    }
-    
-    // Toggle semester content
-    function toggleSemester(semesterId) {
-      const objectives = document.getElementById(`${semesterId}-objectives`);
-      const downIcon = document.getElementById(`${semesterId}-icon-down`);
-      const upIcon = document.getElementById(`${semesterId}-icon-up`);
-      const header = objectives.previousElementSibling;
-      
-      if (objectives.classList.contains('hidden')) {
-        // Open semester
-        objectives.classList.remove('hidden');
-        downIcon.classList.add('hidden');
-        upIcon.classList.remove('hidden');
-        header.classList.add('active');
-        openSemesters[semesterId] = true;
-      } else {
-        // Close semester
-        objectives.classList.add('hidden');
-        downIcon.classList.remove('hidden');
-        upIcon.classList.add('hidden');
-        header.classList.remove('active');
-        openSemesters[semesterId] = false;
-      }
-    }
-    
-    // Select subject filter
-    function selectSubject(subjectId) {
-      selectedSubject = subjectId;
-      document.getElementById('resources-title').textContent = `${subjects[subjectId]} Resources`;
-      document.getElementById('clear-subject-btn').style.display = 'block';
-      navigateTo('resources');
-      renderResources();
-    }
-    
-    // Clear subject filter
-    function clearSubjectFilter() {
-      selectedSubject = null;
-      document.getElementById('resources-title').textContent = 'All Chemistry Resources';
-      document.getElementById('clear-subject-btn').style.display = 'none';
-      renderResources();
-    }
-    
-    // Filter resources
-    function filterResources() {
-      searchQuery = document.getElementById('search-input').value.toLowerCase();
-      renderResources();
-    }
-    
-    // Render resources list
-    function renderResources() {
-      const resourcesList = document.getElementById('resources-list');
-      const noResources = document.getElementById('no-resources');
-      
-      // Filter resources based on search query and selected subject
-      const filteredResources = resources.filter(resource => {
-        const matchesSearch = searchQuery === '' || 
-          resource.title.toLowerCase().includes(searchQuery);
-        const matchesSubject = !selectedSubject || resource.subject === selectedSubject;
-        return matchesSearch && matchesSubject;
-      });
-      
-      // Clear existing resources
-      resourcesList.innerHTML = '';
-      
-      // Show or hide "no resources" message
-      if (filteredResources.length === 0) {
-        noResources.classList.remove('hidden');
-        
-        // Update the message based on what's filtered
-        const noResourcesMsg = document.getElementById('no-resources-message');
-        if (searchQuery && selectedSubject) {
-          noResourcesMsg.textContent = `No resources found for "${searchQuery}" in ${subjects[selectedSubject]}`;
-        } else if (searchQuery) {
-          noResourcesMsg.textContent = `No resources found for "${searchQuery}"`;
-        } else if (selectedSubject) {
-          noResourcesMsg.textContent = `No resources available for ${subjects[selectedSubject]} yet`;
-        } else {
-          noResourcesMsg.textContent = 'No resources available yet';
-        }
-      } else {
-        noResources.classList.add('hidden');
-        
-        // Render each resource
-        filteredResources.forEach(resource => {
-          const resourceCard = document.createElement('div');
-          resourceCard.className = 'resource-card';
-          resourceCard.innerHTML = `
-            <div class="resource-info">
-              <h3>${resource.title}</h3>
-              <div class="resource-meta">
-                <span>${subjects[resource.subject]}</span>
-                <span class="meta-separator"></span>
-                <span>${resource.type === 'test-bank' ? 'Test Bank' : 'Summary'}</span>
-              </div>
-            </div>
-            <button class="btn btn-outline" style="border-color: #e5e7eb; color: #2a9d8f;" onclick="window.location.href='${resource.downloadUrl}'">
-              Download
-            </button>
-          `;
-          resourcesList.appendChild(resourceCard);
-        });
-      }
-    }
-    
-    // Handle upload form submission
-    function handleUploadSubmit(event) {
-      event.preventDefault();
-      
-      const title = document.getElementById('title').value;
-      const subject = document.getElementById('subject').value;
-      const type = document.querySelector('input[name="type"]:checked').value;
-      const file = document.getElementById('file').files[0];
-      
-      if (!title || !subject || !file) {
-        alert('Please fill all required fields and upload a file.');
-        return;
-      }
-      
-      // Add new resource
-      const newResource = {
-        id: resources.length + 1,
-        title: title,
-        subject: subject,
-        type: type,
-        downloadUrl: '#'
-      };
-      
-      resources = [...resources, newResource];
-      
-      // Reset form
-      document.getElementById('upload-form').reset();
-      document.getElementById('file-name').textContent = 'Upload your file';
-      
-      // Show toast notification
-      alert('Resource uploaded successfully!');
-      
-      // Navigate to resources tab
-      navigateTo('resources');
-    }
-  </script>
-</body>
-</html>
+            <div class="subject-card
