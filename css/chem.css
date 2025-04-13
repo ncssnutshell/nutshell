@@ -1,34 +1,18 @@
     /* Base CSS */
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
-      --primary: 170 50% 45%;
-      --primary-foreground: 210 40% 98%;
-      --secondary: 160 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
-      --accent: 173 50% 94%;
-      --accent-foreground: 173 60% 25%;
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 173 60% 35%;
-      --radius: 0.5rem;
-      --sidebar-background: 0 0% 98%;
-      --sidebar-foreground: 240 5.3% 26.1%;
-      --sidebar-primary: 240 5.9% 10%;
-      --sidebar-primary-foreground: 0 0% 98%;
-      --sidebar-accent: 240 4.8% 95.9%;
-      --sidebar-accent-foreground: 240 5.9% 10%;
-      --sidebar-border: 220 13% 91%;
-      --sidebar-ring: 217.2 91.2% 59.8%;
-    }
+:root {
+  --bg: #ffffff; /* White background */
+  --fg: #1e293b; /* Dark text color */
+  --card-bg: #ffffff; /* Card background */
+  --card-border: #e5e7eb; /* Light gray border */
+  --primary: #2a9d8f; /* Primary green-blue */
+  --primary-fg: #ffffff; /* White text on primary */
+  --secondary: #e0f2f1; /* Light teal for accents */
+  --muted: #f3f4f6; /* Light gray for muted elements */
+  --accent: #80cbc4; /* Accent teal */
+  --destructive: #ef4444; /* Red for destructive actions */
+  --border-radius: 0.5rem; /* Rounded corners */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
     .dark {
       --background: 222.2 84% 4.9%;
       --foreground: 210 40% 98%;
