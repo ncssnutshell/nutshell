@@ -247,23 +247,23 @@ border: 1px solid rgb(230, 230, 235);
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
     }
     .feature-icon-wrapper {
-      width: 4rem;
-      height: 4rem;
-      background-color: #e0f2f1;
+      width: 65px;
+      height: 65px;
+ background-color: rgb(225, 240, 240);
       border-radius: 9999px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 1rem;
+      margin: 0 auto 15px;
     }
     .feature-title {
-      font-size: 1.25rem;
+      font-size: 20px;
       font-weight: 600;
-      color: hsl(170, 50%, 25%);
-      margin-bottom: 0.5rem;
+color: rgb(40, 130, 115);
+      margin-bottom: 8px;
     }
     .feature-description {
-      color: #6b7280;
+color: rgb(110, 115, 130);
     }
     /* Subjects Section */
     .subjects-grid {
@@ -271,50 +271,50 @@ border: 1px solid rgb(230, 230, 235);
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
-    @media (min-width: 640px) {
+    @media (min-width: 650px) {
       .subjects-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       .subjects-grid {
         grid-template-columns: repeat(4, 1fr);
       }
     }
     .subject-card {
       background-color: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1rem;
+border: 1px solid rgb(230, 230, 235);
+      border-radius: 8px;
+      padding: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer;
       transition: border-color 0.2s, background-color 0.2s;
     }
-    .subject-card:hover {
-      background-color: #f0faf8;
-      border-color: #80cbc4;
-    }
-    .subject-icon-wrapper {
-      background-color: #e0f2f1;
+.subject-card:hover {
+  background-color: rgb(240, 250, 250);
+  border-color: rgb(130, 200, 200);
+}
+.subject-icon-wrapper {
+  background-color: rgb(225, 240, 240);
       border-radius: 9999px;
-      padding: 0.75rem;
-      margin-bottom: 0.75rem;
+      padding: 12px;
+      margin-bottom: 12px;
     }
     .subject-name {
       font-weight: 500;
-      color: hsl(170, 50%, 25%);
+color: rgb(40, 130, 115);
     }
     /* Resources Section */
     .resources-header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: 1.5rem;
-      gap: 1rem;
+      margin-bottom: 25px;
+      gap: 15px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       .resources-header {
         flex-direction: row;
         align-items: center;
@@ -323,132 +323,132 @@ border: 1px solid rgb(230, 230, 235);
     .search-input {
       flex: 1;
       max-width: 100%;
-      padding: 0.5rem 1rem;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.375rem;
-      font-size: 0.875rem;
+      padding: 8px 15px;
+border: 1px solid rgb(230, 230, 235);
+        border-radius: 5px;
+      font-size: 15px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       .search-input {
-        max-width: 20rem;
+        max-width: 5000px;
       }
     }
     .resource-list {
       display: grid;
-      gap: 1rem;
+      gap: 15px;
     }
     .resource-card {
       background-color: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1rem;
+border: 1px solid rgb(230, 230, 235);
+        border-radius: 8px;
+      padding: 15px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       transition: border-color 0.2s;
     }
     .resource-card:hover {
-      border-color: #80cbc4;
+border-color: rgb(130, 200, 200);
     }
     .resource-info h3 {
       font-weight: 500;
-      color: hsl(170, 50%, 25%);
-      margin-bottom: 0.25rem;
+color: rgb(40, 130, 115);
+      margin-bottom: 5px;
     }
     .resource-meta {
       display: flex;
       align-items: center;
-      font-size: 0.875rem;
-      color: #6b7280;
-      gap: 0.5rem;
+      font-size: 15px;
+color: rgb(110, 115, 130);
+      gap: 8px;
     }
     .meta-separator {
-      width: 0.25rem;
-      height: 0.25rem;
-      background-color: #9ca3af;
+      width: 5px;
+      height: 5px;
+background-color: rgb(155, 160, 175);
       border-radius: 9999px;
     }
     /* Upload Section */
     .upload-card {
       background-color: white;
       border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
+      border-radius: 8px;
+      padding: 25px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      max-width: 48rem;
+      max-width: 800px;
       margin: 0 auto;
     }
     .form-grid {
       display: grid;
-      gap: 1.5rem;
+      gap: 25px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       .form-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     .form-group {
-      margin-bottom: 1.5rem;
+      margin-bottom: 25px;
     }
     .form-label {
       display: block;
-      font-size: 0.875rem;
+      font-size: 15px;
       font-weight: 500;
-      color: #4b5563;
-      margin-bottom: 0.5rem;
+color: rgb(75, 85, 100);
+      margin-bottom: 8px;
     }
     .form-input {
       width: 100%;
-      padding: 0.5rem 1rem;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.375rem;
-      font-size: 0.875rem;
+      padding: 8px 15px;
+border: 1px solid rgb(230, 230, 235);
+      border-radius: 5px;
+      font-size: 15px;
     }
     .form-select {
       width: 100%;
-      padding: 0.5rem 1rem;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.375rem;
-      font-size: 0.875rem;
+      padding: 8px 15px;
+border: 1px solid rgb(230, 230, 235);
+      border-radius: 5px;
+      font-size: 15px;
     }
     .form-textarea {
       width: 100%;
-      padding: 0.5rem 1rem;
+      padding: 8px 15px;
       border: 1px solid #e5e7eb;
-      border-radius: 0.375rem;
-      font-size: 0.875rem;
+      border-radius: 5px;
+      font-size: 15px;
       resize: vertical;
-      min-height: 6rem;
+      min-height: 100px;
     }
     .radio-group {
       display: flex;
-      gap: 1rem;
+      gap: 15px;
     }
     .radio-label {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 8px;
       cursor: pointer;
     }
     .upload-area {
-      border: 2px dashed #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
+border: 2px dashed rgb(230, 230, 235);
+        border-radius: 8px;
+      padding: 25px;
       text-align: center;
     }
     .upload-icon {
-      color: #9ca3af;
-      margin: 0 auto 0.75rem;
+color: rgb(155, 165, 175);
+      margin: 0 auto 12px;
     }
     .upload-text {
       font-weight: 500;
-      color: #4b5563;
-      margin-bottom: 0.5rem;
+color: rgb(75, 85, 100);
+      margin-bottom: 8px;
     }
     .upload-hint {
-      font-size: 0.875rem;
-      color: #6b7280;
-      margin-bottom: 0.5rem;
+      font-size: 15px;
+color: rgb(110, 115, 130);
+        margin-bottom: 8px;
     }
     /* Footer */
     footer {
